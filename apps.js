@@ -9,7 +9,7 @@ const APPS = [
         category: "internet",
         platforms: ["devuan", "freebsd"],
         runtime: "native",
-        icon: "icons/cyberduck.svg"
+        icon: "icons/cyberduck.png"
     },
     {
         name: "Inkscape",
@@ -54,6 +54,6 @@ const APPS = [
         category: "development",
         platforms: ["devuan", "freebsd"],
         runtime: "x11",
-        icon: "icons/vscode.svg"
+        icon: "icons/vscode.png"
     }
 ];
