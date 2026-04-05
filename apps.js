@@ -9,7 +9,7 @@ const APPS = [
         category: "internet",
         platforms: ["devuan", "freebsd"],
         runtime: "native",
-        icon: "CD"
+        icon: "icons/cyberduck.svg"
     },
     {
         name: "Inkscape",
@@ -18,7 +18,7 @@ const APPS = [
         category: "graphics",
         platforms: ["devuan", "freebsd"],
         runtime: "native",
-        icon: "IN"
+        icon: "icons/inkscape.svg"
     },
     {
         name: "GIMP",
@@ -27,7 +27,7 @@ const APPS = [
         category: "graphics",
         platforms: ["devuan", "freebsd"],
         runtime: "native",
-        icon: "GI"
+        icon: "icons/gimp.svg"
     },
     {
         name: "Chromium",
@@ -36,7 +36,7 @@ const APPS = [
         category: "internet",
         platforms: ["devuan", "freebsd"],
         runtime: "x11",
-        icon: "CR"
+        icon: "icons/chromium.svg"
     },
     {
         name: "Quassel",
@@ -45,7 +45,7 @@ const APPS = [
         category: "internet",
         platforms: ["devuan", "freebsd"],
         runtime: "x11",
-        icon: "QU"
+        icon: "icons/quassel.svg"
     },
     {
         name: "Visual Studio Code",
@@ -54,6 +54,6 @@ const APPS = [
         category: "development",
         platforms: ["devuan", "freebsd"],
         runtime: "x11",
-        icon: "VS"
+        icon: "icons/vscode.svg"
     }
 ];

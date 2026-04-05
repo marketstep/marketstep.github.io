@@ -212,12 +212,8 @@ main {
     width: 48px;
     height: 48px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
     flex-shrink: 0;
-    color: white;
+    object-fit: contain;
 }
 
 .app-card-header h3 {

@@ -29,7 +29,7 @@ function createAppCard(app) {
 
     card.innerHTML = `
         <div class="app-card-header">
-            <div class="app-icon" style="background: ${bgColor}">${app.icon}</div>
+            <img class="app-icon" src="${app.icon}" alt="${app.name} icon">
             <div>
                 <h3>${app.name}</h3>
                 <span class="app-version">v${app.version}</span>
