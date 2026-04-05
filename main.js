@@ -7,7 +7,8 @@ const ICON_COLORS = {
     multimedia: "#8a5a2d",
     office: "#3d5a8e",
     system: "#5a5a5a",
-    utilities: "#6e8a2d"
+    utilities: "#6e8a2d",
+    wine: "#722f37"
 };
 
 function createAppCard(app) {
@@ -23,9 +24,9 @@ function createAppCard(app) {
         .map(p => `<span class="platform-tag ${p}">${p === "freebsd" ? "FreeBSD" : "Devuan"}</span>`)
         .join("");
 
-    const runtimeTag = app.runtime === "native"
-        ? '<span class="runtime-tag native">Native</span>'
-        : '<span class="runtime-tag x11">X11</span>';
+    const runtimeLabels = { native: "Native", x11: "X11", wine: "WINE" };
+    const runtimeClass = app.runtime || "native";
+    const runtimeTag = `<span class="runtime-tag ${runtimeClass}">${runtimeLabels[runtimeClass]}</span>`;
 
     card.innerHTML = `
         <div class="app-card-header">

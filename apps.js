@@ -55,5 +55,32 @@ const APPS = [
         platforms: ["devuan", "freebsd"],
         runtime: "x11",
         icon: "icons/vscode.png"
+    },
+    {
+        name: "Steam",
+        version: "1.0",
+        description: "Digital distribution platform for purchasing, downloading, and playing PC games.",
+        category: "wine",
+        platforms: ["devuan", "freebsd"],
+        runtime: "wine",
+        icon: "icons/steam.svg"
+    },
+    {
+        name: "Battle.net",
+        version: "1.0",
+        description: "Blizzard Entertainment's game launcher for World of Warcraft, Diablo, Overwatch, and more.",
+        category: "wine",
+        platforms: ["devuan", "freebsd"],
+        runtime: "wine",
+        icon: "icons/battlenet.svg"
+    },
+    {
+        name: "REAPER",
+        version: "7.0",
+        description: "Professional digital audio workstation for multitrack recording, editing, mixing, and mastering.",
+        category: "wine",
+        platforms: ["devuan", "freebsd"],
+        runtime: "wine",
+        icon: "icons/reaper.svg"
     }
 ];

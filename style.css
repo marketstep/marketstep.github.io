@@ -283,6 +283,11 @@ main {
     color: #e65100;
 }
 
+.runtime-tag.wine {
+    background: #fce4ec;
+    color: #880e4f;
+}
+
 .platform-tag.freebsd {
     background: #fde8e8;
     color: var(--freebsd);
