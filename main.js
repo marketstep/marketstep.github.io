@@ -19,6 +19,7 @@ function createAppCard(app) {
     const bgColor = ICON_COLORS[app.category] || "#666";
 
     const platformTags = app.platforms
+        .sort((a, b) => a === "devuan" ? -1 : 1)
         .map(p => `<span class="platform-tag ${p}">${p === "freebsd" ? "FreeBSD" : "Devuan"}</span>`)
         .join("");
 
