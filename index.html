@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketSTEP - Application Marketplace for Gershwin Desktop Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Market<span class="accent">STEP</span></h1>
+                <p class="tagline">Application Marketplace for Gershwin Desktop Environment</p>
+            </div>
+            <div class="platform-badges">
+                <span class="badge freebsd">FreeBSD</span>
+                <span class="badge devuan">Devuan</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search applications..." aria-label="Search applications">
+        </div>
+        <div class="category-nav" id="category-nav">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="development">Development</button>
+            <button class="category-btn" data-category="graphics">Graphics</button>
+            <button class="category-btn" data-category="internet">Internet</button>
+            <button class="category-btn" data-category="multimedia">Multimedia</button>
+            <button class="category-btn" data-category="office">Office</button>
+            <button class="category-btn" data-category="system">System</button>
+            <button class="category-btn" data-category="utilities">Utilities</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="filter-bar">
+            <div class="result-count" id="result-count"></div>
+            <div class="os-filter">
+                <label><input type="checkbox" id="filter-freebsd" checked> FreeBSD</label>
+                <label><input type="checkbox" id="filter-devuan" checked> Devuan</label>
+            </div>
+        </div>
+        <div class="app-grid" id="app-grid">
+            <!-- Apps are populated by JavaScript -->
+        </div>
+        <div class="no-results" id="no-results" style="display: none;">
+            <p>No applications found matching your criteria.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MarketSTEP</h3>
+                <p>The official application marketplace for the Gershwin Desktop Environment.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Supported Platforms</h3>
+                <ul>
+                    <li>FreeBSD</li>
+                    <li>Devuan GNU/Linux</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="https://github.com/marketstep">GitHub</a></li>
+                </ul>
+            </div>
+            <p class="copyright">BSD 2-Clause License &copy; 2026 MarketSTEP</p>
+        </div>
+    </footer>
+
+    <script src="apps.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
