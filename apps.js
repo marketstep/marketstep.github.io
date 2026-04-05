@@ -3,131 +3,57 @@
 
 const APPS = [
     {
-        name: "GershTerm",
-        version: "1.0.0",
-        description: "Terminal emulator designed for the Gershwin Desktop Environment with tabbed sessions and customizable themes.",
-        category: "system",
-        platforms: ["freebsd", "devuan"],
-        icon: ">"
-    },
-    {
-        name: "Compose",
-        version: "0.9.2",
-        description: "Lightweight text editor with syntax highlighting and project management for everyday coding.",
-        category: "development",
-        platforms: ["freebsd", "devuan"],
-        icon: "<>"
-    },
-    {
-        name: "Canvas",
-        version: "1.2.0",
-        description: "Raster image editor with layers, filters, and drawing tools for creative work.",
-        category: "graphics",
-        platforms: ["freebsd", "devuan"],
-        icon: "P"
-    },
-    {
-        name: "Folio",
-        version: "1.1.0",
-        description: "Document viewer supporting PDF, EPUB, and common office formats.",
-        category: "office",
-        platforms: ["freebsd", "devuan"],
-        icon: "D"
-    },
-    {
-        name: "Wavelength",
-        version: "2.0.1",
-        description: "Audio player and library manager with playlist support and equalizer.",
-        category: "multimedia",
-        platforms: ["freebsd", "devuan"],
-        icon: "W"
-    },
-    {
-        name: "Prism",
-        version: "1.3.0",
-        description: "Web browser built for speed and privacy with built-in ad blocking.",
+        name: "Cyberduck",
+        version: "9.1.0",
+        description: "File transfer client supporting FTP, SFTP, WebDAV, Amazon S3, and cloud storage services.",
         category: "internet",
-        platforms: ["freebsd", "devuan"],
-        icon: "PR"
+        platforms: ["devuan", "freebsd"],
+        runtime: "native",
+        icon: "CD"
     },
     {
-        name: "Vault",
-        version: "0.8.5",
-        description: "File manager with dual-pane view, batch renaming, and archive support.",
-        category: "utilities",
-        platforms: ["freebsd", "devuan"],
-        icon: "V"
-    },
-    {
-        name: "Relay",
-        version: "1.0.3",
-        description: "Email client with multi-account support, PGP encryption, and smart filtering.",
-        category: "internet",
-        platforms: ["freebsd", "devuan"],
-        icon: "@"
-    },
-    {
-        name: "Aperture",
-        version: "0.7.0",
-        description: "Vector graphics editor for illustrations, icons, and UI design work.",
+        name: "Inkscape",
+        version: "1.4.0",
+        description: "Professional vector graphics editor for illustrations, diagrams, icons, and complex drawings.",
         category: "graphics",
-        platforms: ["freebsd", "devuan"],
-        icon: "A"
+        platforms: ["devuan", "freebsd"],
+        runtime: "native",
+        icon: "IN"
     },
     {
-        name: "Ledger",
-        version: "1.4.2",
-        description: "Spreadsheet application with formulas, charting, and CSV import/export.",
-        category: "office",
-        platforms: ["freebsd", "devuan"],
-        icon: "L"
+        name: "GIMP",
+        version: "2.10.38",
+        description: "Full-featured raster image editor with advanced photo retouching, composition, and painting tools.",
+        category: "graphics",
+        platforms: ["devuan", "freebsd"],
+        runtime: "native",
+        icon: "GI"
     },
     {
-        name: "Reel",
-        version: "1.1.0",
-        description: "Video player with subtitle support, hardware acceleration, and streaming capabilities.",
-        category: "multimedia",
-        platforms: ["freebsd", "devuan"],
-        icon: "R"
+        name: "Chromium",
+        version: "124.0",
+        description: "Open-source web browser providing a fast, secure, and stable browsing experience.",
+        category: "internet",
+        platforms: ["devuan", "freebsd"],
+        runtime: "x11",
+        icon: "CR"
     },
     {
-        name: "Forge",
-        version: "0.6.1",
-        description: "Integrated development environment with debugging, version control, and build system integration.",
+        name: "Quassel",
+        version: "0.14.0",
+        description: "Distributed IRC client with a central core component and detachable client interface.",
+        category: "internet",
+        platforms: ["devuan", "freebsd"],
+        runtime: "x11",
+        icon: "QU"
+    },
+    {
+        name: "Visual Studio Code",
+        version: "1.96.0",
+        description: "Source code editor with debugging, syntax highlighting, Git integration, and extensions.",
         category: "development",
-        platforms: ["freebsd", "devuan"],
-        icon: "F"
-    },
-    {
-        name: "SysWatch",
-        version: "1.0.0",
-        description: "System monitor showing CPU, memory, disk, and network usage in real time.",
-        category: "system",
-        platforms: ["freebsd", "devuan"],
-        icon: "S"
-    },
-    {
-        name: "Keychain",
-        version: "0.5.0",
-        description: "Password manager with encrypted storage, browser integration, and TOTP support.",
-        category: "utilities",
-        platforms: ["freebsd", "devuan"],
-        icon: "K"
-    },
-    {
-        name: "Snapshot",
-        version: "1.2.1",
-        description: "Screenshot and screen recording tool with annotation and sharing features.",
-        category: "utilities",
-        platforms: ["freebsd", "devuan"],
-        icon: "SN"
-    },
-    {
-        name: "Signal",
-        version: "0.9.0",
-        description: "Network configuration and diagnostics tool for managing connections and firewall rules.",
-        category: "system",
-        platforms: ["freebsd", "devuan"],
-        icon: "SI"
+        platforms: ["devuan", "freebsd"],
+        runtime: "x11",
+        icon: "VS"
     }
 ];

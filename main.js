@@ -23,6 +23,10 @@ function createAppCard(app) {
         .map(p => `<span class="platform-tag ${p}">${p === "freebsd" ? "FreeBSD" : "Devuan"}</span>`)
         .join("");
 
+    const runtimeTag = app.runtime === "native"
+        ? '<span class="runtime-tag native">Native</span>'
+        : '<span class="runtime-tag x11">X11</span>';
+
     card.innerHTML = `
         <div class="app-card-header">
             <div class="app-icon" style="background: ${bgColor}">${app.icon}</div>
@@ -30,6 +34,7 @@ function createAppCard(app) {
                 <h3>${app.name}</h3>
                 <span class="app-version">v${app.version}</span>
             </div>
+            ${runtimeTag}
         </div>
         <p class="app-description">${app.description}</p>
         <div class="app-meta">
