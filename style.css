@@ -7,8 +7,6 @@
     --text: #333333;
     --text-light: #666666;
     --border: #dddddd;
-    --freebsd: #ab2b28;
-    --devuan: #4a6fa5;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -58,29 +56,6 @@ header {
     font-size: 0.95rem;
     opacity: 0.85;
     margin-top: 0.25rem;
-}
-
-.platform-badges {
-    display: flex;
-    gap: 0.75rem;
-}
-
-.badge {
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.badge.freebsd {
-    background: var(--freebsd);
-    color: white;
-}
-
-.badge.devuan {
-    background: var(--devuan);
-    color: white;
 }
 
 /* Navigation */
@@ -166,19 +141,6 @@ main {
     color: var(--text-light);
 }
 
-.os-filter {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.9rem;
-}
-
-.os-filter label {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    cursor: pointer;
-}
-
 /* App Grid */
 .app-grid {
     display: grid;
@@ -250,52 +212,6 @@ main {
     color: var(--text-light);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-}
-
-.app-platforms {
-    display: flex;
-    gap: 0.4rem;
-}
-
-.platform-tag {
-    font-size: 0.7rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 3px;
-    font-weight: 600;
-}
-
-.runtime-tag {
-    font-size: 0.7rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 3px;
-    font-weight: 600;
-    margin-left: auto;
-    align-self: flex-start;
-}
-
-.runtime-tag.native {
-    background: #e6f4ea;
-    color: #1e7e34;
-}
-
-.runtime-tag.x11 {
-    background: #fff3e0;
-    color: #e65100;
-}
-
-.runtime-tag.wine {
-    background: #fce4ec;
-    color: #880e4f;
-}
-
-.platform-tag.freebsd {
-    background: #fde8e8;
-    color: var(--freebsd);
-}
-
-.platform-tag.devuan {
-    background: #e8eef8;
-    color: var(--devuan);
 }
 
 /* No Results */
