@@ -14,7 +14,6 @@ function createAppCard(app) {
             <img class="app-icon" src="${app.icon}" alt="${app.name} icon">
             <div>
                 <h3>${app.name}</h3>
-                <span class="app-version">v${app.version}</span>
             </div>
         </div>
         <p class="app-description">${app.description}</p>
