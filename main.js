@@ -5,6 +5,10 @@ function createAppCard(app) {
     card.className = "app-card";
     card.dataset.category = app.category;
 
+    const downloadBtn = app.download
+        ? `<a class="app-download" href="${app.download}" target="_blank" rel="noopener noreferrer">Download</a>`
+        : "";
+
     card.innerHTML = `
         <div class="app-card-header">
             <img class="app-icon" src="${app.icon}" alt="${app.name} icon">
@@ -16,6 +20,7 @@ function createAppCard(app) {
         <p class="app-description">${app.description}</p>
         <div class="app-meta">
             <span class="app-category">${app.category}</span>
+            ${downloadBtn}
         </div>
     `;
 

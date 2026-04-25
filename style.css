@@ -214,6 +214,22 @@ main {
     letter-spacing: 0.5px;
 }
 
+.app-download {
+    margin-left: auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.35rem 0.9rem;
+    border-radius: 4px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.app-download:hover {
+    background: var(--primary-dark);
+}
+
 /* No Results */
 .no-results {
     text-align: center;
